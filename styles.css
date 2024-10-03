@@ -7,8 +7,21 @@
     background-color: #A6998F;
     border-radius: 10px;
     margin: 20px;
+    color: white;
 }
 
-.artist{
-    height: 400px;
+.mid{
+    height: 650px;
 }
+
+.low{
+    height: 450px;
+}
+
+.side-up{
+    height: 80%;
+}
+.side-down{
+    height: 20%;
+}
+
