@@ -1,27 +1,43 @@
 .container-fluid{
-    background-color: #D8D9D7;
+    background-color: #220126;
     min-height: 100vh;    
 }
-
-.col{
-    background-color: #A6998F;
-    border-radius: 10px;
+.navbar{
     margin: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.text{
+    background-color: #660273 ;
     color: white;
 }
 
-.mid{
-    height: 650px;
+.row{
+    margin: 10px;
+    border-radius: 10px;
 }
 
+img{
+    border-radius:190px;
+    height: 400px;
+    width: 400px;
+    margin: 40px;
+}
+
+.chat {
+    background-color: #A904BF;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.chat-content{
+    background-color: #A904BF;
+    width: 600px;
+    border-radius: 10px;
+}
 .low{
-    height: 450px;
+    height: 600px;
+    color: white;
+    border-radius: 10px;
 }
-
-.side-up{
-    height: 80%;
-}
-.side-down{
-    height: 20%;
-}
-
