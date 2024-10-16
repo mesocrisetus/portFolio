@@ -1,36 +1,72 @@
 ---
 import { Image } from "astro:assets";
-import NextJS from "./icons/NextJS.astro"
-import Taildwind from "./icons/Taildwind.astro"
-const TAGS = {
-    NEXT: {
-        name: "Next.js",
-        class: "bg-black text-white ",
-        icon: NextJS,
 
-    },
-    TAILWIND: {
-        name: "Tailwind CSS",
+import Python from "./icons/Python.astro";
+import Css from "./icons/CSS1.astro"
+import Flask from "./icons/Flask.astro"
+import Html from "./icons/Html.astro"
+import Mysql from "./icons/Mysql.astro"
+
+const TAGS = {
+    PYTHON:{
+        name: "Python",
         class: "bg-[#003159] text-white",
-        icon: Taildwind,
+        icon: Python
     },
+    CSS:{
+        name:"CSS",
+        class:"bg-[#003159] text-white",
+        icon: Css,
+    },
+    FLASK:{
+        name:"Flask",
+        class:"bg-[#003159] text-white",
+        icon: Flask,
+    },
+    HTML:{
+        name:"Html",
+        class:"bg-[#003159] text-white",
+        icon: Html,
+    },
+    MYSQL:{
+        name:"MySql",
+        class:"bg-[#003159] text-white",
+        icon: Mysql,
+    },
+
 };
 
 const PROJECTS = [
     {
-        title: "SVGL - A beatiful library with SVG icons",
-        description: "Created from scratch",
-        link: "https://svgl.app/",
-        github: "https://github.com/pheralb/svgl",
-        image: "/projects/svg.webp",
-        tags: [TAGS.NEXT, TAGS.TAILWIND],
+        title: "Mars",
+        description: "Red social con registro de usuarios y publicaciones",
+        link: "https://github.com/mesocrisetus",
+        github: "https://github.com/mesocrisetus/MARS",
+        image: "/projects/mars.png",
+        tags: [TAGS.PYTHON, TAGS.CSS,TAGS.FLASK,TAGS.HTML,TAGS.MYSQL],
+    },
+    {
+        title: "Uconverter",
+        description: "Descarga tus videos y música favorita de youtube",
+        link: "https://github.com/mesocrisetus",
+        github: "https://github.com/mesocrisetus/Background_Remover",
+        image: "/projects/Uconverter.png",
+        tags: [TAGS.PYTHON, TAGS.CSS],
+    },
+    {
+        title: "Background Remover",
+        description: "Una APP creada en python para remover el fondo de las imagenes",
+        link: "https://github.com/mesocrisetus",
+        github: "https://github.com/mesocrisetus/Background_Remover",
+        image: "/projects/bckr.png",
+        tags: [TAGS.PYTHON, TAGS.CSS],
     },
 ];
 ---
 
 {
     PROJECTS.map(({ image, title, description, tags }) => (
-        <article>
+        <article class="mb-10">
             <h3 class="text-2xl font-semibold  text-yellow-200 mb-2">
                 {title}
             </h3>
