@@ -6,6 +6,8 @@ import Css from "./icons/CSS1.astro"
 import Flask from "./icons/Flask.astro"
 import Html from "./icons/Html.astro"
 import Mysql from "./icons/Mysql.astro"
+import SocialPill from '../components/SocialPill.astro';
+import Linkedin from '../components/icons/Linkedin.astro';
 
 const TAGS = {
     PYTHON:{
@@ -49,7 +51,7 @@ const PROJECTS = [
         title: "Uconverter",
         description: "Descarga tus videos y música favorita de youtube",
         link: "https://github.com/mesocrisetus",
-        github: "https://github.com/mesocrisetus/Background_Remover",
+        github: "https://github.com/mesocrisetus/Uconverter",
         image: "/projects/Uconverter.png",
         tags: [TAGS.PYTHON, TAGS.CSS],
     },
@@ -65,11 +67,12 @@ const PROJECTS = [
 ---
 
 {
-    PROJECTS.map(({ image, title, description, tags }) => (
+    PROJECTS.map(({ image, title, description, tags, github }) => (
         <article class="mb-10">
+            
             <h3 class="text-2xl font-semibold  text-yellow-200 mb-2">
-                {title}
-            </h3>
+                {title} 				
+            </h3>            
             <p class="text-lg mb-4 text-pretty">{description}</p>
             <ul class="flex gap-x-2 flex-row mb-2">
                 {tags.map((tag) => (
@@ -83,11 +86,13 @@ const PROJECTS = [
                     </li>
                 ))}
             </ul>
+            <a href={github} target="_blank" rel="noopener noreferrer">
             <img
-                class="rounded shadow-2xl shadow-white/15"
+                class="rounded shadow-2xl shadow-white/15 hover:scale-110 hover:bg-white/10 transition"
                 src={image}
                 alt={`Captura de pantalla del proyecto ${image}`}
             />
+            </a>
         </article>
     ))
 }
