@@ -8,6 +8,8 @@ import Html from "./icons/Html.astro"
 import Mysql from "./icons/Mysql.astro"
 import SocialPill from '../components/SocialPill.astro';
 import Linkedin from '../components/icons/Linkedin.astro';
+import Sqlite  from "./icons/Sqlite.astro";
+import Taildwind from "./icons/Taildwind.astro";
 
 const TAGS = {
     PYTHON:{
@@ -35,6 +37,16 @@ const TAGS = {
         class:"bg-[#003159] text-white",
         icon: Mysql,
     },
+    SQLITE:{
+        name:"SqLite",
+        class:"bg-[#003159] text-white",
+        icon: Sqlite,
+    },
+    TAILWIND:{
+        name:"Tailwind",
+        class:"bg-[#003159] text-white",
+        icon: Taildwind,
+    },
 
 };
 
@@ -45,7 +57,15 @@ const PROJECTS = [
         link: "http://mars-red-social.onrender.com",
         github: "https://github.com/mesocrisetus/MARS",
         image: "/projects/mars.png",
-        tags: [TAGS.PYTHON, TAGS.CSS,TAGS.FLASK,TAGS.HTML,TAGS.MYSQL],
+        tags: [TAGS.PYTHON, TAGS.TAILWIND,TAGS.FLASK,TAGS.HTML,TAGS.SQLITE],
+    },
+    {
+        title: "QRS-everywhere",
+        description: "Genera codigos QR facilmente",
+        link: "https://qrs-everywhere.onrender.com/",
+        github: "https://github.com/mesocrisetus/Uconverter",
+        image: "/projects/qr.png",
+        tags: [TAGS.PYTHON, TAGS.CSS,TAGS.FLASK,TAGS.HTML],
     },
     {
         title: "Uconverter",
