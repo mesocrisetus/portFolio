@@ -42,7 +42,7 @@ const PROJECTS = [
     {
         title: "Mars",
         description: "Red social con registro de usuarios y publicaciones",
-        link: "https://github.com/mesocrisetus",
+        link: "http://mars-red-social.onrender.com",
         github: "https://github.com/mesocrisetus/MARS",
         image: "/projects/mars.png",
         tags: [TAGS.PYTHON, TAGS.CSS,TAGS.FLASK,TAGS.HTML,TAGS.MYSQL],
@@ -50,7 +50,7 @@ const PROJECTS = [
     {
         title: "Uconverter",
         description: "Descarga tus videos y música favorita de youtube",
-        link: "https://github.com/mesocrisetus",
+        link: "https://github.com/mesocrisetus/Uconverter",
         github: "https://github.com/mesocrisetus/Uconverter",
         image: "/projects/Uconverter.png",
         tags: [TAGS.PYTHON, TAGS.CSS],
@@ -58,7 +58,7 @@ const PROJECTS = [
     {
         title: "Background Remover",
         description: "Una APP creada en python para remover el fondo de las imagenes",
-        link: "https://github.com/mesocrisetus",
+        link: "https://github.com/mesocrisetus/Background_Remover",
         github: "https://github.com/mesocrisetus/Background_Remover",
         image: "/projects/bckr.png",
         tags: [TAGS.PYTHON, TAGS.CSS],
@@ -67,7 +67,7 @@ const PROJECTS = [
 ---
 
 {
-    PROJECTS.map(({ image, title, description, tags, github }) => (
+    PROJECTS.map(({ image, title, description, tags, link }) => (
         <article class="mb-10">
             
             <h3 class="text-2xl font-semibold  text-yellow-200 mb-2">
@@ -86,7 +86,7 @@ const PROJECTS = [
                     </li>
                 ))}
             </ul>
-            <a href={github} target="_blank" rel="noopener noreferrer">
+            <a href={link} target="_blank" rel="noopener noreferrer">
             <img
                 class="rounded shadow-2xl shadow-white/15 hover:scale-110 hover:bg-white/10 transition"
                 src={image}
